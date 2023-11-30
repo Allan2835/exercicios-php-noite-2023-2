@@ -17,7 +17,7 @@
     <script>
         function gerar() {
             let horario = document.getElementById('hora').value;
-            
+
             window.open(`resolucao1.php?result=${horario}`);
         }
     </script>
