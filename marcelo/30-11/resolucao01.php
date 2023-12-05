@@ -2,6 +2,8 @@
 
 // echo "Deu certo! <br>";
 
+
+
 function somar($valor1, $valor2, $valor3)
 {
     $result = $valor1 + $valor2 + $valor3;
@@ -11,11 +13,11 @@ function somar($valor1, $valor2, $valor3)
 $valor1 = $_GET["num1"];
 $valor2 = $_GET["num2"];
 $valor3 = $_GET["num3"];
-echo "Valor1 é igual à " . $valor1 . "<br>";
-echo "Valor2 é igual à " .$valor2 . "<br>";
-echo "Valor3 é igual à " .$valor3 . "<br>";
+echo "O primeiro valor é igual à: " . $valor1 . "<br>";
+echo "O segundo valor é igual à: " .$valor2 . "<br>";
+echo "O terceiro valor é igual à: " .$valor3 . "<br>";
 
-echo "A soma é " . somar($valor1, $valor2, $valor3) . "<br>";
+echo "A soma é: " . somar($valor1, $valor2, $valor3) . "<br>";
 
 function media($valor1, $valor2, $valor3)
 {
@@ -27,7 +29,7 @@ function media($valor1, $valor2, $valor3)
 $media = media($valor1, $valor2, $valor3);
 
 
-echo "A média é " . $media;
+echo "A média é: " . $media;
 
 
 ?>
