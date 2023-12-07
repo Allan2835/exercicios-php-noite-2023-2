@@ -84,4 +84,9 @@ Exercícios 30/11
 
 3 - Crie uma função que receba dois valores inteiros como argumentos e retorne se os números são divisíveis, se forem divisíveis verifique se cada número digitado é par ou ímpar e mostre na tela também.
 
+4 - Crie uma função que receba três inteiros como argumentos (ano, mês, dia) e verifique se trata de um data válida. O ano deverá estar entre 1900 e o presente ano. Deverá retornar um valor booleano.
+
+5 - Crie duas funções que irão calcular o IMC de uma pessoa (os dados serão passados pelo front-end), uma função deverá calcular o IMC e a segunda deverá dizer qual grau a pessoa se encontra (magro, normal, obeso…), retorne o grau para o usuário.![image](https://github.com/Kavalkievicz/exercicios-php-noite-2023-2/assets/100440256/f1594617-1933-489c-94c0-fe3597b8778d)
+
+
 
