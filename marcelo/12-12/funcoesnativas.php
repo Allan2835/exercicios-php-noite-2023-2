@@ -181,7 +181,163 @@ $numeroFormatar = 2569.5555;
 echo "<br>" . $numeroFormatar;
 echo "<br>" . number_format($numeroFormatar, 2, ".", "");
 
+//----------------------------------------------------------
+echo "<br><br> Contar quantas posições tem no array <br>";
 
+$listaArray = [1, "Edson", 211, "Odonto", "Lions"];
+
+echo "Total: " . count($listaArray);
+
+//----------------------------------------------------------
+echo "<br><br> Diferença entre os arrays <br>";
+
+$listaAlunos = ["João", "Edson", "Rodrigo", "Odonto", "Lions"];
+$alunosAprovados = ["João", "Edson"];
+
+$reprovado = array_diff($listaAlunos, $alunosAprovados);
+
+print_r($reprovado);
+
+//----------------------------------------------------------
+echo "<br><br> Filtrar algo no array <br>";
+// deve conter true ou false
+$numArray = [1, 112, 25, 36, 85];
+
+$filtrados = array_filter($numArray, fn($item) => $item < 86);
+
+print_r($filtrados);
+
+//----------------------------------------------------------
+echo "<br><br> Alteração de array <br>";
+
+$numArray = [1, 112, 25, 36, 85];
+
+$resultado2 = array_map(function ($item) {
+    return $item * 2;
+}, $numArray);
+
+print_r($resultado2);
+//----------------------------------------------------------
+echo "<br><br> Remove o ultimo o item do array <br>";
+
+$numArray = [1, 112, 25, 36, 85];
+
+array_pop($numArray);
+
+print_r($numArray);
+
+//----------------------------------------------------------
+echo "<br><br> Remove o primeiro o item do array <br>";
+
+$numArray = [1, 112, 25, 36, 85];
+
+array_shift($numArray);
+
+print_r($numArray);
+//----------------------------------------------------------
+echo "<br><br> Buscar algo no array <br>";
+
+$numArray = [1, 112, 25, 36, 85];
+
+if (in_array(112, $numArray)) {
+    echo "Tem";
+} else {
+    echo "Não tem";
+}
+//----------------------------------------------------------
+echo "<br><br> Buscar algo no array e retornar a posição <br>";
+
+$numArray = [1, 112, 25, 36, 85];
+
+$pos = array_search(85, $numArray);
+
+echo $pos;
+//----------------------------------------------------------
+echo "<br><br> Ordenação em ordem crescente <br>";
+
+$numArray = [1, 112, 25, 36, 85];
+
+sort($numArray);
+
+print_r($numArray);
+//----------------------------------------------------------
+echo "<br><br> Ordenação em ordem decrescente <br>";
+
+$numArray = [1, 112, 25, 36, 85];
+
+rsort($numArray);
+
+print_r($numArray);
+//----------------------------------------------------------
+echo "<br><br> Ordenação em ordem crescente mantendo a chave <br>";
+
+$numArray = [1, 112, 25, 36, 85];
+
+asort($numArray);
+
+print_r($numArray);
+
+//----------------------------------------------------------
+echo "<br><br> Ordenação em ordem decrescente mantendo a chave <br>";
+
+$numArray = [1, 112, 25, 36, 85];
+
+arsort($numArray);
+
+print_r($numArray);
+//----------------------------------------------------------
+echo "<br><br> Destruindo um array e montando uma string <br>";
+
+$arrayNomeCompleto = ["Edson", "Luiz", "Tiepermann", "Junior"];
+
+print_r($arrayNomeCompleto);
+
+$string = implode(" ", $arrayNomeCompleto);
+
+echo "<br><br> String montada: $string";
+//----------------------------------------------------------
+echo '<br><br>';
+date_default_timezone_set('America/Sao_Paulo');
+
+echo '<br>';
+echo time();
+echo '<br>';
+
+echo date('d');
+echo '<br>';
+echo date('l');
+echo '<br>';
+
+echo date('d-m-Y');
+echo '<br>';
+echo date('d/m/Y H:i:s');
+echo '<br>';
+//---------------------------------------------------------
+echo "<br><br> Manipulando data, formato internacional";
+echo "<br>";
+$data = '2023-03-01';
+
+echo "$data data de inicio do curso";
+echo "<br>";
+
+$milesegundos = strtotime($data);
+echo $milesegundos;
+echo "<br>";
+echo date('d-m-Y', $milesegundos);
+
+echo "<br>";
+echo "<br>";
+
+//---------------------------------------------------------
+echo "<br><br> Diferença entre datas";
+echo "<br>";
+
+$dataInicioAno = "2023-01-01";
+$dataHj = date('Y-m-d');
+
+$difData = abs((strtotime($dataInicioAno) - strtotime($dataHj)));
+
+echo $dias = floor($difData / (60 * 60 * 24));
 
 
 
