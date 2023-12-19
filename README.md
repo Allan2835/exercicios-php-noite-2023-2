@@ -181,5 +181,24 @@ Resolução
 
 5 - Crie duas funções que irão calcular o IMC de uma pessoa (os dados serão passados pelo front-end), uma função deverá calcular o IMC e a segunda deverá dizer qual grau a pessoa se encontra (magro, normal, obeso…), retorne o grau para o usuário.![image](https://github.com/Kavalkievicz/exercicios-php-noite-2023-2/assets/100440256/f1594617-1933-489c-94c0-fe3597b8778d)
 
+---------------------------------------------------------------
+Exercícios 19/12/23
+
+1 - Crie um script para inserir o seu nome completo, e um campo de opções para escolher letras maiúsculas ou minúsculas, em seguida crie uma função para deixar todo o seu nome em maiúsculo e uma para deixar todo o seu nome em minúsculo, e utilize a função e transforme seu nome de acordo com a escolha em tela realizada.
+
+2 - Insira seu nome na tela, e crie um script com função para retornar um array onde cada posição do array contenha uma parte do seu nome.
+
+3 - Dentro do array abaixo, em cada posição contém um valor, escreva um script que receba uma string com os números.
+Array[2, 90, 5, 32, 45, 1, 73]
+
+4 - Crie um sorteador dinâmico com três entrada na tela, sendo elas, a primeira e a segunda entrada o gap de números que irá gerar, e a terceira entrada a quantidade de números que serão sorteados, e apresente na tela todos os resultados.
+
+5 - Escreva uma programa que receba a data de nascimento, calcule quantos dias de vida você já está abrilhantando esse mundão.
+
+6 - Escreva um código onde o usuário possa escolher um dos arrays abaixo e selecionar se ele quer ordenar de maneira crescente ou de maneira decrescente. Separe as ordenações em funções diferentes e chame elas dependendo da escolha.
+Array1[2, 90, 100, 1, 4, 7]
+Array2[3, 7, 13, 87, 1, 2, 69]
+
+
 
 
