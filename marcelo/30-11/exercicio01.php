@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../16-01/style.css" />
 </head>
 
 <body>
+    <?php include '../16-01/cabecalho.php'; ?>
+    <br>
     <form>
         <input name="campo" type="number" id="valor1" placeholder=" Digite o primeiro valor">
         <input name="campo" type="number" id="valor2" placeholder=" Digite o segundo valor">

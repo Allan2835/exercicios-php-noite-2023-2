@@ -1,5 +1,5 @@
 <?php
-
+include '../16-01/Classe.php';
 // echo "Deu certo! <br>";
 
 
@@ -19,14 +19,8 @@ echo "O terceiro valor é igual à: " .$valor3 . "<br>";
 
 echo "A soma é: " . somar($valor1, $valor2, $valor3) . "<br>";
 
-function media($valor1, $valor2, $valor3)
-{
-    $media = somar($valor1, $valor2, $valor3);
-    $media2 = $media / 3;
-    return $media2;
-}
 
-$media = media($valor1, $valor2, $valor3);
+$media = Classe::media($valor1, $valor2, $valor3);
 
 
 echo "A média é: " . $media;
