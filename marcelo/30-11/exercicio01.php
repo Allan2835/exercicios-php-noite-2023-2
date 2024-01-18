@@ -52,7 +52,7 @@
         }
 
     </script>
-
+<?php include '../16-01/rodape.php'; ?>
 </body>
 
 </html>
