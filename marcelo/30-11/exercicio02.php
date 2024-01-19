@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../16-01/style.css" />
 </head>
 
 <body>
+    <?php include '../16-01/cabecalho.php'; ?>
+    <br>
     <form action="">
-        <input type="number" id="valor1" placeholder="">
-        <input type="number" id="valor2" placeholder="">
+        <input type="number" id="valor1" placeholder="1= Fahrenheit  2=Celsius">
+        <input type="number" id="valor2" placeholder="Graus">
         <button onclick="calcular()" type="submit">Calcular</button>
 
     </form>
@@ -22,13 +25,13 @@
 
             if (numero1 == 1 || numero1 == 2) {
                 window.open(`resolucao02.php?num1=${numero1}&&num2=${numero2}`);
-            }else{
+            } else {
                 alert('erro')
             }
         }
 
     </script>
-
+    <?php include '../16-01/rodape.php'; ?>
 </body>
 
 </html>
